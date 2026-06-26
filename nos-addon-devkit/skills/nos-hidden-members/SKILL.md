@@ -5,13 +5,14 @@ description: Scripts/.behaviourのUseHiddenMembersオプションについて説
 
 # UseHiddenMembers — 非推奨オプション
 
-`Scripts/.behaviour` の `UseHiddenMembers` を `true` にすると、コンパイラに `--use-hidden-members` フラグが渡され、通常はアドオンからアクセスできない NoS 内部の `internal` メンバや Hidden API にアクセスできるようになります。
+`Scripts/.behaviour` の `UseHiddenMembers` を `true` にすると、コンパイラに `--use-hidden-members` フラグが渡され、通常はアドオンからアクセスできない NoS 内部の `internal` メンバにアクセスできるようになります。
 
 ## このオプションを使う前に
 
 **このオプションを使わないと実装できない機能があると感じたら、まず NoS の開発者に機能追加を要望してください。**
 
 何を実現したいのか、なぜ現在の公開 API では足りないのかを開発者に伝えることで、将来のすべてのアドオン開発者が恩恵を受けられる API 拡張につながります。これは NoS のアドオンエコシステムにとって非常に価値があります。
+また、公開されていないNoS内部のメンバはバージョン更新のたびに頻繁に変更される可能性があります。アップデートに追従するために大きな負担を負うおそれがあります。
 
 要望を出す際は、このセッションで開発中のアドオンについて私（AI エージェント）に質問してください。実現したい機能の背景・要件・具体的なユースケースを整理してお伝えする手助けができます。
 
@@ -35,3 +36,4 @@ description: Scripts/.behaviourのUseHiddenMembersオプションについて説
 ```
 
 動作確認が取れたら、速やかに NoS 開発者へ機能要望を出し、公開 API での実装に切り替えることを目指してください。
+機能要望はNebula on the Ship公式Discordサーバーのスクリプティングフォーラムにて出すことができます。
