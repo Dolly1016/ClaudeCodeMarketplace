@@ -1,0 +1,25 @@
+{
+  "$schema": "https://www.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "nos-addon-devkit",
+  "version": "1.0.0",
+  "description": "Nebula on the Ship (NoS) アドオン開発ツールキット。スクリプトのコンパイルチェック・API参照・ボイラープレート生成をサポートします。",
+  "author": { "name": "kawamoto.takuto" },
+  "license": "MIT",
+  "keywords": ["among-us", "nebula-on-the-ship", "nos", "addon", "devkit"],
+  "skills": "./skills",
+  "mcpServers": "./.mcp.json",
+  "channels": [
+    {
+      "server": "nos-addon-devkit",
+      "displayName": "NoS Addon DevKit",
+      "userConfig": {
+        "game_dir": {
+          "type": "directory",
+          "title": "NoS 導入済み Among Us のディレクトリ",
+          "description": "Among Us.exe があるディレクトリ（例: C:\\Games\\Among Us）。後から /nos-set-game-dir で変更できます。",
+          "required": false
+        }
+      }
+    }
+  ]
+}

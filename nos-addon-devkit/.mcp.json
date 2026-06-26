@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "nos-addon-devkit": {
+      "type": "stdio",
+      "command": "node",
+      "args": ["./dist/index.js"],
+      "env": {
+        "NOS_GAME_DIR": "${user_config.game_dir}"
+      }
+    }
+  }
+}

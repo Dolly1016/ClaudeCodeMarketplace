@@ -1,0 +1,22 @@
+{
+  "$schema": "https://www.schemastore.org/claude-code-marketplace.json",
+  "name": "Nebula-on-the-Ship-marketplace",
+  "description": "Claude Code plugin marketplace for Nebula on the Ship",
+  "owner": {
+    "name": "Dolly",
+    "email": "dreamingpig1016@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "nos-addon-devkit",
+      "description": "Nebula on the Ship (NoS) アドオン開発ツールキット。スクリプトのコンパイルチェック・API参照・ボイラープレート生成をサポートします。",
+      "source": "./nos-addon-devkit",
+      "author": {
+        "name": "Dolly"
+      },
+      "license": "MIT",
+      "keywords": ["among-us", "nebula-on-the-ship", "nos", "addon", "devkit"],
+      "category": "development"
+    }
+  ]
+}
